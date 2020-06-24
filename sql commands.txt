@@ -5,4 +5,6 @@ show tables; -shows what tables are in the database
 source world.sql; - populates the databse with the sql file
 describe "table_name" - lists and gives infor on the table named
 alter table "table_name" - alow you to add or remove colums and change the constraints
+select * from "table_name" - shows all the data from  the table can add limit to only show a select number of records by adding limit (number) to the end
+insert into "table name" - used to add data into a table 
 

@@ -4,5 +4,5 @@ use world; - slects the database world
 show tables; -shows what tables are in the database
 source world.sql; - populates the databse with the sql file
 describe "table_name" - lists and gives infor on the table named
-
+alter table "table_name" - alow you to add or remove colums and change the constraints
 

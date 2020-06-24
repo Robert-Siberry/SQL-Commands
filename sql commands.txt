@@ -2,6 +2,7 @@ show databases; - shows availble databases
 create database if not exist world; creates a database called world
 use world; - slects the database world 
 show tables; -shows what tables are in the database
-source world.sql; - populates the databse with the sql file 
+source world.sql; - populates the databse with the sql file
+describe "table_name" - lists and gives infor on the table named
 
 

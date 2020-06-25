@@ -1,0 +1,6 @@
+World Solutions
+
+01.select count(id) from city where countrycode="USA";
+02.select name, population, lifeexpectancy, from country where name="argentina";
+03.select name, lifeexpectancy from country where lifeexpectancy is not null order by lifeexpectancy desc limit 1;
+04.

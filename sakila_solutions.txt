@@ -19,4 +19,5 @@ Solutions-
 17.
 18.select * from film where description like "%robots%"\G;
 19.select * from film  order by length desc limit 10\G;
-20.
+20.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id;
+21.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id order by count(fa.actor_id) desc limit 1;

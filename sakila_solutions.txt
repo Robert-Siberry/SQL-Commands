@@ -1,15 +1,22 @@
 Solutions-
 
-1. select * from actor;
-2. select * from actor where first_name="john";
-3. select * from actor where last_name="neeson";
-4. select * from actor where actor_id%10=0;
-5. select * from film where film_id=100;
-6. select * from film where rating="r";
-7. select * from film where rating!="r";
-8. select * from film order by length limit 10;
-9. select title from film;
-10.select * from film where special_features like "%deleted scenes%" 
-11.select last_name , count(last_name) from actor group by last_name having count(last_name)=1
-12.select last_name , count(last_name) from actor group by last_name having count(last_name)>1
+01.select * from actor;
+02.select * from actor where first_name="john";
+03.select * from actor where last_name="neeson";
+04.select * from actor where actor_id%10=0;
+05.select * from film where film_id=100;
+06.select * from film where rating="r";
+07.select * from film where rating!="r";
+08.select * from film order by length limit 10;
+09.select title from film;
+10.select * from film where special_features like "%deleted scenes%"; 
+11.select last_name , count(last_name) from actor group by last_name having count(last_name)=1;
+12.select last_name , count(last_name) from actor group by last_name having count(last_name)>1;
 13.
+14.
+15.
+16.select avg(length) from film;
+17.
+18.select * from film where description like "%robots%"\G;
+19.select * from film  order by length desc limit 10\G;
+20.

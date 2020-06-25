@@ -4,3 +4,9 @@ World Solutions
 02.select name, population, lifeexpectancy, from country where name="argentina";
 03.select name, lifeexpectancy from country where lifeexpectancy is not null order by lifeexpectancy desc limit 1;
 04.
+05.
+06.select * from city where name like "F%" limit 25;
+07.select count(id) from city where countrycode="chn";
+08.select name, population from country where population is not null order by population limit 1;
+09.select count(code) from country;
+10.select name, surfacearea from country where surfacearea is not null order by surfacearea desc limit 10;

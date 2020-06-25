@@ -4,7 +4,7 @@ Solutions-
 02.select * from actor where first_name="john";
 03.select * from actor where last_name="neeson";
 04.select * from actor where actor_id%10=0;
-05.select * from film where film_id=100;
+05.select * description from film where film_id=100;
 06.select * from film where rating="r";
 07.select * from film where rating!="r";
 08.select * from film order by length limit 10;
@@ -12,12 +12,19 @@ Solutions-
 10.select * from film where special_features like "%deleted scenes%"; 
 11.select last_name , count(last_name) from actor group by last_name having count(last_name)=1;
 12.select last_name , count(last_name) from actor group by last_name having count(last_name)>1;
-13.
+13.select actor_id count(fa.actor_id), a
 14.
 15.
 16.select avg(length) from film;
-17.
+17.select avg(length), catagory from film_list group by catagory;
 18.select * from film where description like "%robots%"\G;
 19.select * from film  order by length desc limit 10\G;
-20.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id;
-21.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id order by count(fa.actor_id) desc limit 1;
+20.select count(release_year) where release_year =2010;
+21.select * from film_list where category="Horror";
+22.
+23.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id;
+24.select fa.actor_id, count(fa.actor_id), a.first_name, a.last_name from film_actor fa join actor a on fa.actor_id=a.actor_id group by fa.actor_id order by count(fa.actor_id) desc limit 1;
+25.select count(distint(country)) from country\G;
+26.select name as language from language orger by name;
+27. select concat(first_name, " ", last_name as full_name from actor where last_name like "%son%"
+28. select catagory, count(catagory)

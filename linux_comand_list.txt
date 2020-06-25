@@ -1,0 +1,34 @@
+1  man
+    2  man man
+    3  la man
+    4  man la
+    5  man ls
+    6  sudo apt update
+    7  sudo install default-jdk
+    8  sudo apt install default-jdk
+    9  sudo apt upgrade -y
+   10  cd desktop
+   11  ls
+   12  touch test.txt
+   13  ls
+   14  touch test2.txt
+   15  touch test3.txt
+   16  touch a.txt
+   17  touch 9834275.txt
+   18  ls
+   19  ls -la
+   20  ls
+   21  touch 98fo4.py
+   22  touch test4.py
+   23  touch test5.py
+   24  touch test6.c
+   25  ls *.txt
+   26  ls test.*
+   27  ls test*
+   28  uname -r
+   29  who
+   30  user=$(who)
+   31  echo "hello world"
+   32  echo $ucer
+   33  echo $user
+   34  history
